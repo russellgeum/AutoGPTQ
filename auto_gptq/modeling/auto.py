@@ -1,6 +1,5 @@
 from inspect import signature
 from typing import Dict, Optional, Union
-
 from ._base import BaseGPTQForCausalLM, BaseQuantizeConfig
 from ._utils import check_and_get_model_type
 from .baichuan import BaiChuanGPTQForCausalLM
@@ -30,6 +29,7 @@ from .stablelmepoch import StableLMEpochGPTQForCausalLM
 from .starcoder2 import Starcoder2GPTQForCausalLM
 from .xverse import XverseGPTQForCausalLM
 from .yi import YiGPTQForCausalLM
+from .minicpm3 import MiniCPM3GPTQForCausalLM
 
 
 GPTQ_CAUSAL_LM_MODEL_MAP = {
@@ -50,6 +50,7 @@ GPTQ_CAUSAL_LM_MODEL_MAP = {
     "internlm": InternLMGPTQForCausalLM,
     "qwen": QwenGPTQForCausalLM,
     "mistral": MistralGPTQForCausalLM,
+    "minicpm3":MiniCPM3GPTQForCausalLM,
     "Yi": YiGPTQForCausalLM,
     "xverse": XverseGPTQForCausalLM,
     "deci": DeciLMGPTQForCausalLM,
